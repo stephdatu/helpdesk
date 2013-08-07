@@ -1,4 +1,7 @@
 Helpdesk::Application.routes.draw do
+  root to: "tickets#index"
+
+  resources :tickets
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -39,7 +42,7 @@ Helpdesk::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
