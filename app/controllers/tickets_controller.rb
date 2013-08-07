@@ -11,6 +11,7 @@ class TicketsController < ApplicationController
     @ticket = Ticket.new(ticket_params)
 
     if @ticket.save
+      HelpdeskMailer.ticket_copy(@ticket).deliver
       flash[:notice] = "Ticket has been submitted."
       redirect_to @ticket
     else
