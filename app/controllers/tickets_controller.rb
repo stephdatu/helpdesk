@@ -13,7 +13,8 @@ class TicketsController < ApplicationController
       flash[:notice] = "Ticket has been submitted."
       redirect_to @ticket
     else
-      # nothing yet
+      flash[:alert] = "Ticket has not been submitted."
+      render action: "new"
     end
   end
 
