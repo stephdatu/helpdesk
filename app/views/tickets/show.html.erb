@@ -1,6 +1,7 @@
 <h2><%= @ticket.subject %></h2>
 Created by <%= @ticket.name %><br>
 <%= @ticket.message %>
+<%= @ticket.reply %>
 
 <p>
   <%= link_to "Edit Ticket", edit_ticket_path(@ticket) %>

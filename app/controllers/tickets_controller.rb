@@ -50,6 +50,6 @@ class TicketsController < ApplicationController
 
   private
     def ticket_params
-      params.require(:ticket).permit(:name, :subject, :message)
+      params.require(:ticket).permit(:name, :subject, :message, :reply)
     end
 end
