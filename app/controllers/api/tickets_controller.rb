@@ -4,11 +4,8 @@ class Api::TicketsController < ApplicationController
   def create
     # make sure the thing posting has rights to post here... maybe with
     # http basic auth or a super secret token
-    if Ticket.create_from_postmark(Postmark::Mitt.new(request.body.read))
-      render text: "Created a ticket!", status: :created
-    else
-      render text: "Unauthorized!", status: :unauthorized
-    end
+    Ticket.create_from_postmark(Postmark::Mitt.new(request.body.read))
+    render text: "Created a ticket!", status: :created
   end
 end
 
