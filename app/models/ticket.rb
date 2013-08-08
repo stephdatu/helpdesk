@@ -9,13 +9,8 @@ class Ticket < ActiveRecord::Base
         ticket.title = mitt.subject
         ticket.body = if mitt.text_body.blank?
         mitt.text_body
-        end
-        ticket.save
-      else
-        return false
-      end
-    end
-  end
 
+        ticket.save
+  end
 
 end
