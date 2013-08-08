@@ -4,6 +4,6 @@ class HelpdeskMailer < ActionMailer::Base
   def ticket_copy(ticket)
     @ticket = ticket
 
-    mail to: "sd356@drexel.edu"
+    mail to: "stephdatu@gmail.com", subject: "Ticket submitted: #{ticket.subject}"
   end
 end

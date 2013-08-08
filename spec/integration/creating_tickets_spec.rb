@@ -14,9 +14,10 @@ feature "Creating Help Desk Tickets" do
     page.should have_content("Ticket has been submitted.")
   end
 
-  scenario "can not create a ticket without a subject" do
+  scenario "can not create a ticket without a name or subject" do
     click_button "Create Ticket"
     expect(page).to have_content("Ticket has not been submitted.")
+    expect(page).to have_content("Name can't be blank")
     expect(page).to have_content("Subject can't be blank")
   end
 end
