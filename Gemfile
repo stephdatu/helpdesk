@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 gem 'postmark-rails'
+gem 'postmark-mitt'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -33,7 +34,6 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'postmark-mitt'
 end
 
 group :development do
@@ -44,6 +44,7 @@ end
 group :test, :development do
   gem 'rspec-rails', '~> 2.11'
   gem 'launchy'
+  gem 'pry-rails'
 end
 
 group :test do

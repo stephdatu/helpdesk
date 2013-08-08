@@ -2,8 +2,6 @@ class Api::TicketsController < ApplicationController
   skip_before_filter :verify_authenticity_token
 
   def create
-    # make sure the thing posting has rights to post here... maybe with
-    # http basic auth or a super secret token
     Ticket.create_from_postmark(Postmark::Mitt.new(request.body.read))
     render text: "Created a ticket!", status: :created
   end

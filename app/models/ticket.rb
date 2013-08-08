@@ -3,7 +3,7 @@ class Ticket < ActiveRecord::Base
 
   def self.create_from_postmark(mitt)
     ticket_id = mitt.to.split("@").first.split("+").last
-    ticket = Ticket.find_by_ticket_id(ticket_id)
+    ticket = Ticket.find(ticket.id)
     ticket.message = mitt.text_body
     ticket.save
   end
