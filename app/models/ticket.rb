@@ -6,13 +6,8 @@ class Ticket < ActiveRecord::Base
     ticket = Ticket.find_by_ticket_id(ticket_id)
     ticket.message_id = mitt.message_id
     ticket.title = mitt.subject
-    ticket.body = if mitt.text_body.blank?
-      mitt.text_body
-    end
-      ticket.save
-    else
-      return false
-    end
+    ticket.text_body
+    ticket.save
   end
 
 end
