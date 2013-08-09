@@ -32,8 +32,11 @@ Just click "Submit a Ticket" at the top of the page to begin entering your help 
 ## Information
 
 Screenshots of your application below:
-![Screenshot 1](Screenshot 1 IMG URL goes here)
-![Screenshot 2](Screenshot 1 IMG URL goes here)
+![Form to enter tickets](lib/assets/hd-enteringtix.png)
+![View of your submission](lib/assets/hd-showinit.png)
+![Ticket in email inbox](lib/assets/hd-emailedtix.png)
+![View of ticket with help desk response](lib/assets/hd-tixwreponse.png)
+![View of the homepage](lib/assets/hd-showall.png)
 
 
 ### Known Issues
