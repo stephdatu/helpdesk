@@ -35,7 +35,7 @@ Screenshots of your application below:
 ![Form to enter tickets](lib/assets/hd-enteringtix.png)
 ![View of your submission](lib/assets/hd-showinit.png)
 ![Ticket in email inbox](lib/assets/hd-emailedtix.png)
-![View of ticket with help desk response](lib/assets/hd-tixwreponse.png)
+![View of ticket with help desk response](lib/assets/hd-tixwresponse.png)
 ![View of the homepage](lib/assets/hd-showall.png)
 
 
