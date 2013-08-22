@@ -41,8 +41,7 @@ Screenshots of your application below:
 
 ### Known Issues
 
-If you discover any bugs, feel free to create an issue on GitHub fork and
-send us a pull request.
+If you discover any bugs, feel free to create an issue on GitHub fork and send a pull request.
 
 ## Author
 
